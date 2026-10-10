@@ -14,11 +14,11 @@ concurrency:
 
 jobs:
   verificare:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # fixat: ubuntu-latest trece pe Ubuntu 26 din 19.10, în mijlocul monitorizării
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Dependențe
