@@ -1,0 +1,36 @@
+name: monitor-anunt
+
+on:
+  schedule:
+    - cron: "20 * * * *"     # la fiecare oră, minutul 20 (UTC). GitHub poate întârzia rularea câteva minute.
+  workflow_dispatch:          # rulare manuală din tab-ul Actions
+
+permissions:
+  contents: write             # ca să poată salva dovezile în repo (commit)
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  verificare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dependențe
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Verificare
+        run: python monitor.py
+      - name: Salvează dovezile (commit = încă o marcă de timp, a GitHub)
+        run: |
+          git config user.name "monitor-anunt"
+          git config user.email "monitor-anunt@users.noreply.github.com"
+          git add dovezi
+          git commit -m "Verificare $(date -u +'%Y-%m-%d %H:%M UTC')" || exit 0
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
