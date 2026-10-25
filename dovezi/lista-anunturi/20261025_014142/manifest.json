@@ -1,0 +1,17 @@
+{
+  "versiune_monitor": "1.0",
+  "tinta": "lista-anunturi",
+  "url": "https://www.citadinzalau.ro/informatii-publice/anunturi/",
+  "text_cautat": "ANUNȚ PRIVIND PUBLICAREA PROIECTULUI DE FUZIUNE",
+  "selector": null,
+  "moment_utc": "2026-10-25T01:41:42.316251+00:00",
+  "status_http": 200,
+  "url_final": "https://www.citadinzalau.ro/informatii-publice/anunturi/",
+  "stare": "PREZENT",
+  "eroare": null,
+  "fisiere_sha256": {
+    "pagina.jpg": "6d0fad243513b9798cb026f41c087cc7e207fa7b0dc0ec1c0e9c62ccf3871ef6",
+    "pagina.html": "6948d63e8c77efb93b653b18052c1c99774104bf2cf1f6fa43bd2c4a8e740860"
+  },
+  "hash_manifest_anterior": "794dd1f0650ac25fc4c32f9bf3d9fcac0451766c85e5e311d25bedc3dae0206c"
+}
