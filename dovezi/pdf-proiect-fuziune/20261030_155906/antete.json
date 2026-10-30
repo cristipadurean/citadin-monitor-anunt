@@ -1,0 +1,9 @@
+{
+  "Server": "openresty/1.31.1.1",
+  "Date": "Fri, 30 Oct 2026 15:59:07 GMT",
+  "Content-Length": "11843",
+  "Connection": "keep-alive",
+  "Content-Type": "text/html",
+  "Cache-Control": "private, no-cache, no-store, must-revalidate, max-age=0",
+  "cf-edge-cache": "no-cache"
+}
