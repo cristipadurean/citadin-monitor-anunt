@@ -1,0 +1,18 @@
+{
+  "versiune_monitor": "1.0",
+  "tinta": "pdf-proiect-fuziune",
+  "url": "https://www.citadinzalau.ro/pdf/2026-09-29-proiect-de-fuziune-semnat.pdf",
+  "text_cautat": "PDF proiect de fuziune (semnătura %PDF- și SHA-256 neschimbat)",
+  "selector": null,
+  "moment_utc": "2026-10-31T12:58:52.306787+00:00",
+  "status_http": 200,
+  "url_final": "https://www.citadinzalau.ro/pdf/2026-09-29-proiect-de-fuziune-semnat.pdf",
+  "stare": "PREZENT",
+  "eroare": null,
+  "fisiere_sha256": {
+    "antete.json": "918a913ae80ef83e18c07ecd1cdbc7c37cc3fb350d28ca69ca442da4f85d6d30"
+  },
+  "hash_manifest_anterior": "18be9a8588b27f09d90ce0a2ac6ff2142a78e8c60103a8c0908ec153aa0ea43b",
+  "document_sha256": "c3d1cba39aa9f8aebae44d029b6769822b92d37c38cc3bd7a7a4f9316000bab3",
+  "document_octeti": 2367023
+}
